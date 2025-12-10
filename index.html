@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIEGA | Fakultas Ilmu Komputer</title>
+    <meta name="description" content="Program Studi Inovatif SIEGA (Sistem Informasi, E-Commerce, Game, Akuntansi) di Unika Soegijapranata. Mencetak talenta digital masa depan.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* CSS Tambahan (Khusus untuk tata letak halaman ini, dipindahkan ke sini untuk kemudahan) */
+        main { padding-top: 100px; } 
+
+        /* Akreditasi Grid */
+        .akreditasi-grid {
+            display: flex; flex-wrap: wrap; align-items: center; gap: 40px;
+            justify-content: center; margin-top: 40px; margin-bottom: 80px; 
+        }
+        .akreditasi-info { max-width: 400px; text-align: left; }
+        .akreditasi-info h2 { font-size: 24px; color: #00eaff; margin-bottom: 5px; }
+        .akreditasi-info p { opacity: 0.8; }
+        .akreditasi-img { max-width: 400px; }
+        .akreditasi-img img { max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 0 20px rgba(0, 238, 255, 0.2); }
+        
+        /* Visi Misi Grid */
+        .visi-misi-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            max-width: 1000px; margin: auto; gap: 40px;
+        }
+        
+        /* Utility */
+        .card p { margin: 0; }
+        #tentangkami { padding-top: 120px; }
+        
+        /* Style untuk gambar fasilitas (Sekarang kosong karena gambar dihapus) */
+        /* .card img { ... } */ 
+
+        /* === NEW CONTACT STYLES === */
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center; 
+        }
+        .contact-info {
+            flex: 1 1 100%; 
+            min-width: 300px;
+            padding: 20px;
+            text-align: center; 
+        }
+        
+        .contact-detail-item {
+            margin-bottom: 15px;
+        }
+        .contact-detail-item strong {
+            color: #FF66A3; /* Warna pink dari image_dfecd0.jpg */
+            display: block;
+            font-size: 1.1em;
+        }
+        .contact-detail-item p, 
+        .contact-detail-item a {
+            color: #fff; 
+            opacity: 0.9;
+        }
+
+        /* Gaya Ikon Sosial */
+        .social-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #00eaff;
+            text-shadow: 0 0 5px #00eaff;
+        }
+
+        /* Maps Style */
+        .map-container {
+            margin-top: 50px;
+            height: 400px;
+            border: 5px solid rgba(0, 234, 255, 0.5); /* Border neon */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 234, 255, 0.3);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="glass-nav" role="banner">
+        <nav role="navigation">
+            <div class="logo">
+                <a href="#hero">
+                    <img src="logo.png" alt="Logo SIEGA" class="logo-img">
+                </a>
+                <span>.</span>
+            </div>
+            <ul>
+                <li><a href="#tentangkami" aria-label="Navigasi ke bagian Tentang Kami">Tentang Kami</a></li>
+                <li><a href="#prodi" aria-label="Navigasi ke Program Studi">Program Studi</a></li>
+                <li><a href="#fasilitas" aria-label="Navigasi ke Fasilitas Kampus">Fasilitas</a></li>
+                <li><a href="#kontak" class="btn-daftar" aria-label="Navigasi ke Formulir Pendaftaran">Kontak Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-content" style="text-align: left;"> 
+            <h1>Selamat Datang di SIEGA</h1>
+            <p class="hero-desc">Dalam bahasa Spanyol, Siega artinya panen. Kami percaya bahwa penguasaan **teknologi informasi** adalah keniscayaan. Jika penerapannya sesuai, maka kita akan memanen kehidupan manusia yang lebih baik.</p>
+            <button class="btn-neo" onclick="scrollToElement('kontak')">Daftar Sekarang</button>
+        </div>
+    </section>
+    
+    <main>
+        <section id="tentangkami" class="section alt">
+            
+            <h1 class="title">Sejarah Program Studi SIEGA</h1>
+            
+            <div style="max-width: 900px; margin: 0 auto 50px; text-align: left;">
+                <h3 style="color: #00eaff; margin-bottom: 10px;">SIEGA: Sistem Informasi – E Commerce – Game Technology</h3>
+                <p class="desc" style="text-align: justify; margin-bottom: 20px;">
+                    Unika Soegijapranata mendapatkan ijin operasional program studi Sistem Informasi pada tahun 2013 dengan program konsentrasi Sistem Informasi dan Game Technology. Selanjutnya di tahun 2017, dibuka program kuliah ganda Akuntansi+Sistem Informasi (AKSI) dan konsentrasi E-Commerce di tahun 2018.
+                </p>
+                <p class="desc" style="text-align: justify;">
+                    SIEGA merupakan sebuah singkatan dari beberapa konsentrasi yang ada di Program Studi Sistem Informasi Unika Soegijapranata Semarang, dan berdiri sejak **11 November 2011**. Didirikan oleh **Prof. Dr. Ridwan Sanjaya S.E., S.Kom., MS.IEC**. Sejak tahun 2021, Program Studi Sistem Informasi dengan berbagai konsentrasi didalamnya membuat sebuah julukan baru yaitu **SIEGA** yang juga merupakan gaya hidup, semangat, dan pengalaman baru.
+                </p>
+                
+                <h3 style="margin-top: 40px; color: #00eaff;">Konsentrasi Utama:</h3>
+                <ul style="list-style-type: none; padding-left: 0; margin-top: 15px;">
+                    <li style="margin-bottom: 8px;">* S1 Business Information Systems (Sistem Informasi Bisnis)</li>
+                    <li style="margin-bottom: 8px;">* S1 Game Technology (Teknologi Game)</li>
+                    <li style="margin-bottom: 8px;">* S1 E-commerce</li>
+                    <li style="margin-bottom: 8px;">* S1 Akuntansi + S1 Sistem Informasi (Double Degree)</li>
+                </ul>
+            </div>
+            
+            <h2 class="title" style="margin-top: 40px;">Pencapaian Akreditasi</h2>
+            <div class="akreditasi-grid">
+                <div class="akreditasi-img">
+                    <img src="akreditas.jpg" alt="Sertifikat Akreditasi Baik Sekali Program Studi Sistem Informasi Unika Soegijapranata">
+                </div>
+                
+                <div class="akreditasi-info"> 
+                    <h2>Akreditasi Saat Ini: Baik Sekali</h2>
+                    <p>
+                        Tanggal 21 September 2021 akreditasi Program Studi Sistem Informasi melakukan konversi ISK dan tercantum dalam Keputusan Badan Akreditasi Nasional Perguruan Tinggi No. 10974/SK/BAN-PT/AK-ISK/S/IX/2021 mengenai Peringkat Akreditasi Program Studi Sistem Informasi pada Program Sarjana Universitas Katolik Soegijapranata, Kota Semarang menjadi **Baik Sekali** dengan Nilai 338.
+                    </p>
+                    <p style="margin-top: 15px; font-size: 0.9em;">
+                        Akreditasi B diperoleh pada 4 Mei 2021 (No. 2634/SK/BAN-PT/Akred/S/V/2021), dan akreditasi C sebelumnya pada 9 Mei 2017 dan 25 Juni 2013.
+                    </p>
+                </div>
+            </div>
+            
+            <h2 class="title">Visi dan Misi</h2>
+            <div class="visi-misi-grid">
+                <div class="card glass-card" style="border: 1px solid #00eaff;">
+                    <h3 style="color: #00eaff; margin-bottom: 10px;">Visi</h3>
+                    <p style="text-align: justify;">
+                        Menjadi komunitas akademik yang unggul dalam pendidikan, penelitian dan pengabdian dengan dilandasi nilai-nilai Kristiani: cinta kasih, keadilan dan kejujuran.
+                    </p>
+                </div>
+                
+                <div class="card glass-card">
+                    <h3 style="margin-bottom: 10px;">Misi</h3>
+                    <ul style="text-align: justify; padding-left: 20px; font-size: 0.95em; opacity: 0.9;">
+                        <li style="margin-bottom: 10px;">Menyelenggarakan pendidikan yang berkualitas secara akademik dengan didukung pengembangan kepribadian yang utuh dan potensi kepemimpinan.</li>
+                        <li style="margin-bottom: 10px;">Melakukan penelitian untuk pengembangan ilmu dan teknologi demi meningkatkan kesejahteraan manusia.</li>
+                        <li style="margin-bottom: 10px;">Melakukan pengabdian kepada masyarakat sebagai penerapan ilmu dan teknologi yang telah dikembangkan dalam penelitian dan kesejahteraan manusia.</li>
+                        <li style="margin-bottom: 10px;">Memberikan perhatian dan mencari pemecahan terhadap berbagai masalah sosial budaya masyarakat melalui komunitas akademik.</li>
+                        <li>Mengembangkan jaringan Kerjasama dengan berbagai institusi pendidikan, penelitian dan pengabdian lokal, nasional dan internasional untuk meningkatkan kualitas pendidikan dan penelitian.</li>
+                        <li style="margin-top: 10px;">Memperbaiki dan mengembangkan universitas secara terus menerus, sehingga dapat mendukung segala upaya untuk mencapai keunggulan.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="prodi" class="section">
+            <h2 class="title">Program Studi dan Konsentrasi (SIEGA)</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; opacity: 0.8;">
+                Program Studi Sistem Informasi Unika Soegijapranata menawarkan empat pilar keahlian utama untuk mencetak talenta digital multitalenta.
+            </p>
+            <div class="grid">
+                <div class="card glass-card neon-border">
+                    <h3 style="color: #00eaff; margin-bottom: 10px;">Sistem Informasi</h3>
+                    <p>Fokus pada perancangan sistem informasi perusahaan, ERP, Business Intelligence, dan analisis data bisnis.</p>
+                    <a href="#" class="btn-neo card-btn" onclick="openModal('si')">Penjelasan Lebih Lengkap</a>
+                </div>
+                
+                <div class="card glass-card neon-border">
+                    <h3 style="color: #00eaff; margin-bottom: 10px;">E-Commerce</h3>
+                    <p>Fokus pada strategi bisnis digital, pemasaran online, manajemen rantai pasok digital, dan teknologi *marketplace*.</p>
+                    <a href="#" class="btn-neo card-btn" onclick="openModal('ec')">Penjelasan Lebih Lengkap</a>
+                </div>
+                
+                <div class="card glass-card neon-border">
+                    <h3 style="color: #00eaff; margin-bottom: 10px;">Game Technology</h3>
+                    <p>Fokus pada pengembangan game (coding, desain, algoritma), simulasi VR/AR, dan manajemen proyek kreatif.</p>
+                    <a href="#" class="btn-neo card-btn" onclick="openModal('gt')">Penjelasan Lebih Lengkap</a>
+                </div>
+                
+                <div class="card glass-card neon-border">
+                    <h3 style="color: #00eaff; margin-bottom: 10px;">AKSI (Double Degree)</h3>
+                    <p>Program kuliah ganda Akuntansi dan Sistem Informasi, mencetak profesional yang menguasai IT dan keuangan/audit.</p>
+                    <a href="#" class="btn-neo card-btn" onclick="openModal('aksi')">Penjelasan Lebih Lengkap</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="fasilitas" class="section alt">
+            <h2 class="title">Fasilitas Pendukung Pembelajaran</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; opacity: 0.8;">
+                Kami menyediakan sarana dan prasarana modern untuk mendukung semua kegiatan praktikum, riset, dan kenyamanan mahasiswa.
+            </p>
+            <div class="grid">
+                <div class="card glass-card">Laboratorium Komputer Modern</div>
+                <div class="card glass-card">Ruangan Ber-AC (Akses Kelas)</div>
+                <div class="card glass-card">Akses Wi-Fi Kecepatan Tinggi</div>
+                <div class="card glass-card">Toilet/Kamar Mandi Bersih</div>
+                <div class="card glass-card">Vending Machine (Minuman/Snack)</div>
+                <div class="card glass-card">Ruang ORMAWA (Organisasi Mahasiswa)</div>
+            </div>
+        </section>
+
+        <section id="kontak" class="section">
+            <h2 class="title" style="color: #ffffff;">Hubungi Kami</h2>
+            
+            <div class="contact-content">
+                
+                <div class="contact-info">
+                    
+                    <div class="contact-detail-item">
+                        <strong style="color: #00eaff;">Jam Kerja</strong>
+                        <p>Senin – Jumat pukul 08.00 – 15.00 WIB</p>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <strong style="color: #00eaff;">Alamat</strong>
+                        <p>Gedung Henricus Constant Lt 8 Unika Soegijapranata</p>
+                        <p>Jl. Pawiyatan Luhur IV/1, Bendan Duwur, Semarang, Jawa Tengah 50234</p>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <strong style="color: #00eaff;">Email</strong>
+                        <p><a href="mailto:si@unika.ac.id" style="color: #00eaff;">si@unika.ac.id</a></p>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <strong style="color: #00eaff;">Hotline Sistem Informasi</strong>
+                        <p>+62 819-0338-5595 (WA)</p>
+                    </div>
+                    
+                    <p style="margin-top: 15px; text-align: center;"><a href="#" style="color: #00eaff; text-decoration: none;">FAQ</a></p>
+
+                    <div class="social-icons" style="text-align: center; margin-top: 30px;">
+                        <a href="https://facebook.com/unika.soegijapranata" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/unika.soegijapranata" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@unika.soegijapranata" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/user/unikaSoegijapranata" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="title" style="margin-top: 40px;">Google Maps</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.279893457585!2d110.40798211477317!3d-6.98064979512399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b76c8c117d1%3A0x6b4c1097e3a9f070!2sUniversitas%20Katolik%20Soegijapranata%20(UNIKA)!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </section>
+    </main>
+    
+    <footer class="section alt">
+        <p style="text-align: center; opacity: 0.7;">© 2025 SIEGA - Fakultas Ilmu Komputer. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <div id="prodiModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">×</span>
+            <h2 id="modalTitle" class="modal-title">Judul Program Studi</h2>
+            <div id="modalBody" class="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <script>
+        // Memastikan scroll smooth berfungsi untuk tombol dan anchor link
+        function scrollToElement(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Script untuk anchor link agar menggunakan smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                if (targetId) {
+                    scrollToElement(targetId);
+                }
+            });
+        });
+
+        // ===================================
+        // Logika Modal
+        // ===================================
+        
+        const prodiDetails = {
+            'si': {
+                title: "Sistem Informasi (Business Information Systems)",
+                content: `
+                    <p><strong>Konsentrasi:</strong> Business Information Systems (BIS)</p>
+                    <p><strong>Detail:</strong> Program ini memberikan pemahaman mendalam tentang bagaimana merancang, mengimplementasikan, dan mengelola solusi teknologi informasi yang terintegrasi secara langsung dengan strategi bisnis perusahaan. Anda akan menjadi ahli dalam pemodelan proses bisnis, implementasi sistem perencanaan sumber daya perusahaan (ERP), dan memanfaatkan alat *Business Intelligence* untuk mengubah data menjadi keputusan strategis yang menguntungkan.</p>
+                    <p>Lulusan dipersiapkan untuk menjadi penghubung vital yang menjembatani komunikasi antara tim teknis (IT) dan manajemen bisnis. Keahlian ini sangat dibutuhkan di perusahaan berskala besar yang membutuhkan optimasi operasional berbasis IT.</p>
+                    <p><strong>Prospek Karir:</strong> System Analyst, ERP Consultant, Business Intelligence Specialist, Data Analyst (Fokus Bisnis), IT Project Manager.</p>
+                `
+            },
+            'ec': {
+                title: "E-Commerce",
+                content: `
+                    <p><strong>Konsentrasi:</strong> E-Commerce (EC)</p>
+                    <p><strong>Detail:</strong> Bidang ini melatih Anda untuk menguasai aspek teknis dan pemasaran dalam menjalankan bisnis di platform digital. Anda akan belajar membangun infrastruktur *e-commerce* yang *scalable*, mengelola rantai pasok digital (Supply Chain Management), dan menerapkan strategi *Digital Marketing* (SEO/SEM) untuk menarik dan mempertahankan konsumen secara online.</p>
+                    <p>Fokus kami adalah pada penciptaan nilai digital dan pemahaman mendalam tentang perilaku konsumen di *e-marketplace*. Lulusan siap untuk menciptakan atau memimpin unit bisnis digital yang sukses.</p>
+                    <p><strong>Prospek Karir:</strong> E-Commerce Specialist, Digital Marketing Manager, SEO/SEM Expert, Digital Product Manager, E-Business Consultant.</p>
+                `
+            },
+            'gt': {
+                title: "Game Technology",
+                content: `
+                    <p><strong>Konsentrasi:</strong> Game Technology (GT)</p>
+                    <p><strong>Detail:</strong> Program ini adalah perpaduan unik antara ilmu komputer, matematika, dan kreativitas visual. Anda akan berfokus pada aspek teknis pemrograman game, mulai dari merancang algoritma game, implementasi fisika dan grafis kompleks, hingga menciptakan kecerdasan buatan (AI) untuk karakter game.</p>
+                    <p>Keahlian yang didapat sangat relevan untuk industri hiburan, namun juga diterapkan secara luas pada bidang *edutainment*, simulasi industri, serta teknologi imersif masa depan seperti *Augmented Reality* (AR) dan *Virtual Reality* (VR).</p>
+                    <p><strong>Prospek Karir:</strong> Game Programmer/Developer, Game Designer, VR/AR Specialist, Technical Artist, Simulation Engineer, Software Developer (Industri Kreatif).</p>
+                `
+            },
+            'aksi': {
+                title: "AKSI (Akuntansi + Sistem Informasi) - Double Degree",
+                content: `
+                    <p><strong>Program Khusus:</strong> Kuliah Ganda Akuntansi dan Sistem Informasi.</p>
+                    <p><strong>Detail:</strong> AKSI merupakan program bergengsi yang memberikan lulusan dua kompetensi inti yang sangat dibutuhkan: keahlian teknis IT dan pemahaman mendalam tentang audit, akuntansi, dan keuangan. Anda akan dipersiapkan untuk menganalisis dan mengaudit sistem informasi keuangan, memastikan keamanan dan kepatuhan data.</p>
+                    <p>Lulusan memiliki keunggulan kompetitif yang signifikan sebagai profesional yang mampu berbicara dalam bahasa bisnis (keuangan) dan bahasa teknologi (IT), sangat dicari dalam bidang IT Audit dan Akuntansi Forensik.</p>
+                    <p><strong>Prospek Karir:</strong> IT Auditor, Konsultan Sistem Akuntansi, Forensic Accountant, IT Security Analyst (Fokus Keuangan), Data Auditor.</p>
+                `
+            }
+        };
+
+        // Fungsi untuk menampilkan modal
+        function openModal(prodiId) {
+            const detail = prodiDetails[prodiId];
+            if (!detail) return;
+
+            document.getElementById('modalTitle').textContent = detail.title;
+            document.getElementById('modalBody').innerHTML = detail.content;
+
+            document.getElementById('prodiModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Fungsi untuk menutup modal
+        function closeModal() {
+            document.getElementById('prodiModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Menutup modal jika user mengklik area luar modal
+        window.onclick = function(event) {
+            const modal = document.getElementById('prodiModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+
+</body>
+</html>
